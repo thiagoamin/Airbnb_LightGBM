@@ -24,6 +24,7 @@ To handle other missing values in our dataset, we used median values for imputat
 Below is a comparative graph of all the models I considered, showcasing their best cross-validation (CV) scores, standard deviations, and best training scores. Each of the best scores were found using randomized search in these models’ key hyper-parameters:
 
 **Figure 2:** Best CV R^2 Score with Standard Deviation.
+
 <img width="600" alt="Screenshot 2024-02-22 at 12 49 01 AM" src="https://github.com/thiagoamin/Airbnb_LightGBM/assets/122248078/2e6c5970-7c09-4869-8b68-6dc9423715d3">
 
 Based on Figure 2, it’s evident that my LightGBM model yielded the highest R^2 score and also maintained a reasonable standard deviation, indicating consistent performance. The chosen model achieved an R^2 score of 0.3791, indicating it can explain about 37.91% of the variance in the Reviews Per Month feature. The standard deviation of the R^2 score, at 0.0098, demonstrates a consistent performance across different validation sets. 
@@ -33,7 +34,8 @@ Such consistency is particularly crucial in the context of our original problem�
 The best performing hyperparameters were a learning rate of 0.1, a max depth of 7, 100 trees, and 120 leaves. This specific combination seemed to offer the most effective balance between complexity and predictive power during the grid search process. Figure 3 includes a red data point indicating the chosen model, which is the one closest to the diagonal line representing a perfect balance between the training (seen data) and validation (unseen data) R^2 scores. This shows the model has good generalization to unseen data without overfitting or underfitting. 
 
 **Figure 3:** Comparison of Mean Training vs. Validation R^2 scores for LightGBM Model using random combinations of hyper-parameter values
-![Picture1](https://github.com/thiagoamin/Airbnb_LightGBM/assets/122248078/67213583-3d7e-4195-b008-6215c7b1fc15)
+![Picture1](https://github.com/thiagoamin/Airbnb_LightGBM/assets/122248078/7e0986dd-ccac-4d45-b93c-273d87f85d11)
+
 
 
 ## Limitations
