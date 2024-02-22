@@ -34,6 +34,7 @@ Such consistency is particularly crucial in the context of our original problemâ
 The best performing hyperparameters were a learning rate of 0.1, a max depth of 7, 100 trees, and 120 leaves. This specific combination seemed to offer the most effective balance between complexity and predictive power during the grid search process. Figure 3 includes a red data point indicating the chosen model, which is the one closest to the diagonal line representing a perfect balance between the training (seen data) and validation (unseen data) R^2 scores. This shows the model has good generalization to unseen data without overfitting or underfitting. 
 
 **Figure 3:** Comparison of Mean Training vs. Validation R^2 scores for LightGBM Model using random combinations of hyper-parameter values
+
 ![Picture1](https://github.com/thiagoamin/Airbnb_LightGBM/assets/122248078/7e0986dd-ccac-4d45-b93c-273d87f85d11)
 
 
