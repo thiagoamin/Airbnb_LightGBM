@@ -1,3 +1,5 @@
+A LightGBM Machine Learning model for predicting Airbnb's listing popularity. 
+
 # Predicting Popularity of Airbnb Listings (Summary)
 
 ## Introduction
